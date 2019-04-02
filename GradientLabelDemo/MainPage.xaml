@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:GradientLabelDemo" 
+             xmlns:controls="clr-namespace:GradientLabelDemo.Controls" 
+             x:Class="GradientLabelDemo.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <controls:GradientLabel x:Name="label" FontSize="30" TextColor1="Yellow" TextColor2="Fuchsia" Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="Change Color!" Clicked="Handle_Clicked" Margin="0,0,0,20" />
+    </StackLayout>
+</ContentPage>
