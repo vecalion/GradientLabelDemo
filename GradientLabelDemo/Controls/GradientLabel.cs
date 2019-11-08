@@ -12,8 +12,8 @@ namespace GradientLabelDemo.Controls
 
         public Color TextColor1
         {
-            get { return (Color)GetValue(TextColor1Property); }
-            set { SetValue(TextColor1Property, value); }
+            get => (Color)GetValue(TextColor1Property);
+            set => SetValue(TextColor1Property, value);
         }
 
         public static readonly BindableProperty TextColor2Property = BindableProperty.Create(
@@ -24,8 +24,8 @@ namespace GradientLabelDemo.Controls
 
         public Color TextColor2
         {
-            get { return (Color)GetValue(TextColor2Property); }
-            set { SetValue(TextColor2Property, value); }
+            get => (Color)GetValue(TextColor2Property);
+            set => SetValue(TextColor2Property, value);
         }
     }
 }

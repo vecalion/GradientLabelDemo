@@ -6,7 +6,7 @@
              x:Class="GradientLabelDemo.MainPage">
     <StackLayout>
         <!-- Place new controls here -->
-        <controls:GradientLabel x:Name="label" FontSize="30" TextColor1="Yellow" TextColor2="Fuchsia" Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <controls:GradientLabel x:Name="label" FontSize="50" TextColor1="Yellow" TextColor2="Fuchsia" Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
         <Button Text="Change Color!" Clicked="Handle_Clicked" Margin="0,0,0,20" />
     </StackLayout>
 </ContentPage>

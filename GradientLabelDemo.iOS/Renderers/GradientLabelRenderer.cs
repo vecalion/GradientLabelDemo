@@ -24,6 +24,12 @@ namespace GradientLabelDemo.iOS.Renderers
             }
         }
 
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+            SetTextColor();
+        }
+
         private void SetTextColor()
         {
             var image = GetGradientImage(Control.Frame.Size);
@@ -61,12 +67,6 @@ namespace GradientLabelDemo.iOS.Renderers
             var img = UIGraphics.GetImageFromCurrentImageContext();
             UIGraphics.EndImageContext();
             return img;
-        }
-
-        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-            base.OnElementPropertyChanged(sender, e);
-            SetTextColor();
         }
 
     }
